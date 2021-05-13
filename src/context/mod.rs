@@ -24,6 +24,10 @@ pub use self::{
 #[path = "arch/aarch64.rs"]
 mod arch;
 
+#[cfg(target_arch = "riscv64")]
+#[path = "arch/riscv64.rs"]
+mod arch;
+
 #[cfg(target_arch = "x86")]
 #[path = "arch/x86.rs"]
 mod arch;
